@@ -69,13 +69,16 @@
     <div class="app-body">
         <div class="homepage">
             <div class="homepage-header">
-                <button>
-                    <ion-icon name="chevron-back-outline"></ion-icon>
-                </button>
-                <h4 class="big-text center">HOME</h4>
                 <div class="user-avatar">
                     <img src="img/user-1.png" alt="">
                 </div>
+                
+                 <h4 class="big-text center">HOME</h4>
+               
+                 <div class="notification">
+                    <ion-icon name="notifications-outline"></ion-icon>
+                </div>
+               
             </div>
 
             <div class="center-div">
@@ -1018,109 +1021,245 @@
 
         </div>
         <div class="checkoutpage">
-            <div class="checkout-holder">
-                <div class="checkout-card-holder">
-                    <div class="checkout-card" id="cart-product-1">
-                        <div class="qty-rocker">
-                            <button>
-                                <ion-icon name="add"></ion-icon>
-                            </button>
-                            <p class="value-of-products">1</p>
-                            <button>
-                                <ion-icon name="remove"></ion-icon>
-                            </button>
-                        </div>
-                        <div class="check-out-card-img" id="inspect-cart-product-1">
-                            <img src="img/jacket-3.webp" alt="">
-                        </div>
-                        <div class="check-out-product-data">
-                            <p class="check-out-name-of-product">Jacket</p>
-                            <p class="check-out-price-of-product">N 3,025</p>
-                            <p class="check-out-customization-options">
-                                <div class="scroller">
-                                    <div class="scroller-2">
-                                        <span id="product-1-spec-1" class="checkout-added-specs">Blue collar <ion-icon
-                                                name="close-circle" id="product-1-remove-spec-1">
-                                            </ion-icon></span>
-                                        <span id="product-1-spec-2" class="checkout-added-specs">Longer sleeves
-                                            <ion-icon name="close-circle" id="product-1-remove-spec-2">
-                                            </ion-icon></span>
-                                    </div>
-                                </div>
-                            </p>
-                        </div>
-                        <div class="remove-from-cart">
-                            <button id="product-1-remove-cart">
-                                <ion-icon name="trash"></ion-icon>
-                            </button>
-                        </div>
-                    </div>
-
-                    <div class="checkout-card" id="cart-product-2">
-                        <div class="qty-rocker">
-                            <button>
-                                <ion-icon name="add"></ion-icon>
-                            </button>
-                            <p class="value-of-products">3</p>
-                            <button>
-                                <ion-icon name="remove"></ion-icon>
-                            </button>
-                        </div>
-                        <div class="check-out-card-img" id="inspect-cart-product-2">
-                            <img src="img/shirt-3.png" alt="">
-                        </div>
-                        <div class="check-out-product-data">
-                            <p class="check-out-name-of-product">Classic Flannel</p>
-                            <p class="check-out-price-of-product">N 3,025</p>
-                            <p class="check-out-customization-options">
-                                <div class="scroller">
-                                    <div class="scroller-2">
-                                        <span id="product-2-spec-1" class="checkout-added-specs">Red left sleeves
-                                            <ion-icon name="close-circle" id="remove-spec-1">
-                                            </ion-icon></span>
-                                        <span id="product-2-spec-2" class="checkout-added-specs">Blue right sleeves
-                                            <ion-icon name="close-circle" id="remove-spec-2">
-                                            </ion-icon></span>
-                                    </div>
-                                </div>
-                            </p>
-                        </div>
-                        <div class="remove-from-cart">
-                            <button id="product-2-remove-cart">
-                                <ion-icon name="trash"></ion-icon>
-                            </button>
-                        </div>
-                    </div>
+            <div class="homepage-header">
+                <div class="user-avatar">
+                    <img src="img/user-1.png" alt="">
                 </div>
+                
+                 <h4 class="big-text center">CART</h4>
+               
+                 <div class="notification">
+                    <ion-icon name="notifications-outline"></ion-icon>
+                </div>
+            </div>
 
-                <div class="checkout-card" id="cart-product-3">
-                    <div class="qty-rocker">
-                        <button>
-                            <ion-icon name="add"></ion-icon>
-                        </button>
-                        <p class="value-of-products">3</p>
-                        <button>
-                            <ion-icon name="remove"></ion-icon>
-                        </button>
-                    </div>
-                    <div class="check-out-card-img" id="inspect-cart-product-3">
-                        <img src="img/cargo-3.jpg" alt="">
-                    </div>
-                    <div class="check-out-product-data">
-                        <p class="check-out-name-of-product">Cargo pant</p>
-                        <p class="check-out-price-of-product">N 3,025</p>
-                        <p class="check-out-customization-options">
-                            <div class="scroller">
-                                <div class="scroller-2">
-
+            <div class="checkout-holder">
+                    <div class="longscroller">
+                        <div class="checkout-card-holder">
+                            <div class="checkout-card" id="cart-product-1">
+                                <div class="qty-rocker">
+                                    <button>
+                                        <ion-icon name="add"></ion-icon>
+                                    </button>
+                                    <p class="value-of-products">1</p>
+                                    <button>
+                                        <ion-icon name="remove"></ion-icon>
+                                    </button>
+                                </div>
+                                <div class="check-out-card-img" id="inspect-cart-product-1">
+                                    <img src="img/jacket-3.webp" alt="">
+                                </div>
+                                <div class="check-out-product-data">
+                                    <p class="check-out-name-of-product">Jacket</p>
+                                    <p class="check-out-price-of-product">N 3,025</p>
+                                    <p class="check-out-customization-options">
+                                        <div class="scroller">
+                                            <div class="scroller-2">
+                                                <span id="product-1-spec-1" class="checkout-added-specs">Blue collar <ion-icon
+                                                        name="close-circle" id="product-1-remove-spec-1">
+                                                    </ion-icon></span>
+                                                <span id="product-1-spec-2" class="checkout-added-specs">Longer sleeves
+                                                    <ion-icon name="close-circle" id="product-1-remove-spec-2">
+                                                    </ion-icon></span>
+                                            </div>
+                                        </div>
+                                    </p>
+                                </div>
+                                <div class="remove-from-cart">
+                                    <button id="product-1-remove-cart">
+                                        <ion-icon name="trash"></ion-icon>
+                                    </button>
                                 </div>
                             </div>
-                        </p>
-                    </div>
-                    <div class="remove-from-cart">
-                        <button id="product-3-remove-cart">
-                            <ion-icon name="trash"></ion-icon>
-                        </button>
+        
+                            <div class="checkout-card" id="cart-product-2">
+                                <div class="qty-rocker">
+                                    <button>
+                                        <ion-icon name="add"></ion-icon>
+                                    </button>
+                                    <p class="value-of-products">3</p>
+                                    <button>
+                                        <ion-icon name="remove"></ion-icon>
+                                    </button>
+                                </div>
+                                <div class="check-out-card-img" id="inspect-cart-product-2">
+                                    <img src="img/shirt-3.png" alt="">
+                                </div>
+                                <div class="check-out-product-data">
+                                    <p class="check-out-name-of-product">Classic Flannel</p>
+                                    <p class="check-out-price-of-product">N 3,025</p>
+                                    <p class="check-out-customization-options">
+                                        <div class="scroller">
+                                            <div class="scroller-2">
+                                                <span id="product-2-spec-1" class="checkout-added-specs">Red left sleeves
+                                                    <ion-icon name="close-circle" id="remove-spec-1">
+                                                    </ion-icon></span>
+                                                <span id="product-2-spec-2" class="checkout-added-specs">Blue right sleeves
+                                                    <ion-icon name="close-circle" id="remove-spec-2">
+                                                    </ion-icon></span>
+                                            </div>
+                                        </div>
+                                    </p>
+                                </div>
+                                <div class="remove-from-cart">
+                                    <button id="product-2-remove-cart">
+                                        <ion-icon name="trash"></ion-icon>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="checkout-card" id="cart-product-3">
+                            <div class="qty-rocker">
+                                <button>
+                                    <ion-icon name="add"></ion-icon>
+                                </button>
+                                <p class="value-of-products">3</p>
+                                <button>
+                                    <ion-icon name="remove"></ion-icon>
+                                </button>
+                            </div>
+                            <div class="check-out-card-img" id="inspect-cart-product-3">
+                                <img src="img/cargo-3.jpg" alt="">
+                            </div>
+                            <div class="check-out-product-data">
+                                <p class="check-out-name-of-product">Cargo pant</p>
+                                <p class="check-out-price-of-product">N 3,025</p>
+                                <p class="check-out-customization-options">
+                                    <div class="scroller">
+                                        <div class="scroller-2">
+        
+                                        </div>
+                                    </div>
+                                </p>
+                            </div>
+                            <div class="remove-from-cart">
+                                <button id="product-3-remove-cart">
+                                    <ion-icon name="trash"></ion-icon>
+                                </button>
+                            </div>
+                        </div>
+        
+                        <div class="checkout-card" id="cart-product-3">
+                            <div class="qty-rocker">
+                                <button>
+                                    <ion-icon name="add"></ion-icon>
+                                </button>
+                                <p class="value-of-products">3</p>
+                                <button>
+                                    <ion-icon name="remove"></ion-icon>
+                                </button>
+                            </div>
+                            <div class="check-out-card-img" id="inspect-cart-product-3">
+                                <img src="img/cargo-3.jpg" alt="">
+                            </div>
+                            <div class="check-out-product-data">
+                                <p class="check-out-name-of-product">Cargo pant</p>
+                                <p class="check-out-price-of-product">N 3,025</p>
+                                <p class="check-out-customization-options">
+                                    <div class="scroller">
+                                        <div class="scroller-2">
+        
+                                        </div>
+                                    </div>
+                                </p>
+                            </div>
+                            <div class="remove-from-cart">
+                                <button id="product-3-remove-cart">
+                                    <ion-icon name="trash"></ion-icon>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="checkout-card" id="cart-product-3">
+                            <div class="qty-rocker">
+                                <button>
+                                    <ion-icon name="add"></ion-icon>
+                                </button>
+                                <p class="value-of-products">3</p>
+                                <button>
+                                    <ion-icon name="remove"></ion-icon>
+                                </button>
+                            </div>
+                            <div class="check-out-card-img" id="inspect-cart-product-3">
+                                <img src="img/cargo-3.jpg" alt="">
+                            </div>
+                            <div class="check-out-product-data">
+                                <p class="check-out-name-of-product">Cargo pant</p>
+                                <p class="check-out-price-of-product">N 3,025</p>
+                                <p class="check-out-customization-options">
+                                    <div class="scroller">
+                                        <div class="scroller-2">
+        
+                                        </div>
+                                    </div>
+                                </p>
+                            </div>
+                            <div class="remove-from-cart">
+                                <button id="product-3-remove-cart">
+                                    <ion-icon name="trash"></ion-icon>
+                                </button>
+                            </div>
+                        </div>
+        
+                        <div class="checkout-card" id="cart-product-3">
+                            <div class="qty-rocker">
+                                <button>
+                                    <ion-icon name="add"></ion-icon>
+                                </button>
+                                <p class="value-of-products">3</p>
+                                <button>
+                                    <ion-icon name="remove"></ion-icon>
+                                </button>
+                            </div>
+                            <div class="check-out-card-img" id="inspect-cart-product-3">
+                                <img src="img/cargo-3.jpg" alt="">
+                            </div>
+                            <div class="check-out-product-data">
+                                <p class="check-out-name-of-product">Cargo pant</p>
+                                <p class="check-out-price-of-product">N 3,025</p>
+                                <p class="check-out-customization-options">
+                                    <div class="scroller">
+                                        <div class="scroller-2">
+        
+                                        </div>
+                                    </div>
+                                </p>
+                            </div>
+                            <div class="remove-from-cart">
+                                <button id="product-3-remove-cart">
+                                    <ion-icon name="trash"></ion-icon>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="checkout-card" id="cart-product-3">
+                            <div class="qty-rocker">
+                                <button>
+                                    <ion-icon name="add"></ion-icon>
+                                </button>
+                                <p class="value-of-products">3</p>
+                                <button>
+                                    <ion-icon name="remove"></ion-icon>
+                                </button>
+                            </div>
+                            <div class="check-out-card-img" id="inspect-cart-product-3">
+                                <img src="img/cargo-3.jpg" alt="">
+                            </div>
+                            <div class="check-out-product-data">
+                                <p class="check-out-name-of-product">Cargo pant</p>
+                                <p class="check-out-price-of-product">N 3,025</p>
+                                <p class="check-out-customization-options">
+                                    <div class="scroller">
+                                        <div class="scroller-2">
+        
+                                        </div>
+                                    </div>
+                                </p>
+                            </div>
+                            <div class="remove-from-cart">
+                                <button id="product-3-remove-cart">
+                                    <ion-icon name="trash"></ion-icon>
+                                </button>
+                            </div>
                     </div>
                 </div>
             </div>
@@ -1134,8 +1273,18 @@
         </div>
     </div>
     <div class="feedpage">
-        <div class="feedpage-holder">
+        <div class="homepage-header">
+            <div class="user-avatar">
+                <img src="img/user-1.png" alt="">
+            </div>
             
+             <h4 class="big-text center">INSPIRATION</h4>
+           
+             <div class="notification">
+                <ion-icon name="notifications-outline"></ion-icon>
+            </div>
+        </div>
+        <div class="feedpage-holder">
             <div class="feedpage-card-holder">
                 <div class="feedpage-card">
                     <div class="feedpage-top">
@@ -1303,6 +1452,15 @@
 
                 <!--end card-->
                 <div class="feedpage-card">
+                    <div class="homepage-header">
+                        <button>
+                            <ion-icon name="chevron-back-outline"></ion-icon>
+                        </button>
+                        <h4 class="big-text center">PROFILE</h4>
+                        <div class="user-avatar">
+                            <img src="img/user-1.png" alt="">
+                        </div>
+                    </div>
                     <div class="feedpage-top">
                         <div class="feedpage-avater">
                             <img src="img/user-1.png" alt="">
@@ -1386,17 +1544,17 @@
         </div>
     </div>
     <div class="profilepage">
-        <div class="profilepage-holder">
-            <div class="profilepage-top">
-                <div class="profile-page-avater">
-                    <div class="feedpage-avater">
-                        <img src="img/user-1.png" alt="">
-                    </div>
-                </div>
-                <div class="notification">
-                    <ion-icon name="notifications-outline"></ion-icon>
-                </div>
+        <div class="homepage-header">
+            <div class="user-avatar">
+                <img src="img/user-1.png" alt="">
             </div>
+            
+             <h4 class="big-text center">PROFILE</h4>
+           
+             <div class="exit">
+                <ion-icon name="exit-outline"></ion-icon>
+            </div>
+        </div>
             <div class="profile-user-details">
                 <div class="user-img">
                     <img src="img/jose-dp.png" alt="">
