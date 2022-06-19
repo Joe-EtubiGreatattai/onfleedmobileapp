@@ -58,31 +58,28 @@ setTimeout(function(){
         <div class="form-holder">
          <div class="form-1">
           <form action="app.html">
-            <div class="input-holder">
-             <input type="text" name="" id=""  placeholder="Enter User Name"> <i class='bx bx-user'></i>
+            <div class="input-holder" method="post">
+             <input type="text" name="" id="name"  placeholder="Enter User Name"> <i class='bx bx-user'></i>
             </div>
             <div class="input-holder">
-              <input type="password" name="" id=""   placeholder="Enter Password"> <i class='bx bx-lock-open-alt'></i>
+              <input type="password" name="" id="password"   placeholder="Enter Password"> <i class='bx bx-lock-open-alt'></i>
              </div>
              <p class="sub-text">FORGOT PASSWORD?</p>
-             <button class="big-btn red">LOGIN</button>
+             <button class="big-btn red" onclick="getUserData()">LOGIN</button>
            </form>
            <button class="big-btn" id="signUp">SIGN UP</button>
          </div>
 
           <div  class="form-2">
-            <form action="#!">
+            <form action="#!" >
               <div class="input-holder">
-               <input type="text" name="" id=""   placeholder="Enter User Name"> <i class='bx bx-user'></i>
+               <input type="text" name="" id="name-reg"   placeholder="Enter User Name"> <i class='bx bx-user'></i>
               </div>
               <div class="input-holder">
-                <input type="email" name="" id=""   placeholder="Enter Email"> <i class='bx bx-envelope'></i>
+                <input type="email" name="" id="mail-reg"   placeholder="Enter Email"> <i class='bx bx-envelope'></i>
                </div>
               <div class="input-holder">
-                <input type="password" name="" id=""   placeholder="Enter Password"> <i class='bx bx-lock-open-alt'></i>
-               </div>
-               <div class="input-holder">
-                <input type="password" name="" id=""  placeholder="Re-Enter Password"> <i class='bx bx-lock-open-alt'></i>
+                <input type="password" name="" id="password-reg"   placeholder="Enter Password"> <i class='bx bx-lock-open-alt'></i>
                </div>
                <button class="big-btn red">SIGN UP</button>
                <button class="big-btn" id="backtologin">BACK TO LOGIN</button>

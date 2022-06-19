@@ -186,8 +186,8 @@ $("#remove-home-card-img-12").click(function () {
     $("#product-12").removeClass("active-home-card-inspect", 'slow');
 });
 
-$("#home-card-img-12").click(function () {
-    $("#product-12").addClass("active-home-card-inspect", 'slow');
+$("#home-card-img-13").click(function () {
+    $("#product-13").addClass("active-home-card-inspect", 'slow');
 });
 
 
@@ -514,3 +514,16 @@ $("#section-3").click(function () {
     $("#section-2").removeClass("active-section", 'slow');
     $("#section-1").removeClass("active-section", 'slow');
 });
+
+
+function getUserData() {
+    username = document.getElementById("name").value;
+    password = document.getElementById("password").value;
+
+    localStorage.setItem("NAME", username);
+    localStorage.setItem("PASSWORD", password);
+
+    
+    document.getElementById("user-name-profile-window").innerHTML = "New text!";
+    return;
+}
